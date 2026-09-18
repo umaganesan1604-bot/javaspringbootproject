@@ -65,6 +65,8 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 
@@ -103,6 +105,19 @@ public class StudentController {
             studentService.deleteStudent(id);
         }
 
+        @GetMapping("/")
+        public String home() {
+            return "index";
+        }
+        @GetMapping("/add-student")
+            public String addStudentPage(){
+                return "add-student";
+        }
+        @GetMapping("/students-page")
+        public String studentPage(){
+            return "students";
+        }
+        
                 
 }
                 

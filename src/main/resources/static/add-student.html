@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student - Student Management System</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                Student Management System
+            </a>
+            <div class="nav-links">
+                <a href="/index.html">
+                    Home
+                </a>
+                <a href="/add-student.html" class="active">
+                    Add Student
+                </a>
+                <a href="/students.html">
+                    View Students
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="page-container">
+        <div class="form-card">
+            <h1>Add Student</h1>
+            <p class="page-subtitle">
+                Enter the student details below
+            </p>
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="name">
+                        Student Name
+                    </label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter student name"
+                        minlength="3"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        Email Address
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter student email"
+                        minlength="3"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="department">
+                        Department
+                    </label>
+                    <input
+                        type="text"
+                        id="department"
+                        name="department"
+                        placeholder="Enter department"
+                        minlength="3"
+                        required
+                    >
+                </div>
+                <button
+                    type="submit"
+                    class="button save-button">
+
+                    Save Student
+
+                </button>
+            </form>
+            <!-- Success / Error Message -->
+            <p id="message"></p>
+            <!-- Navigation Buttons -->
+            <div class="page-actions">
+                <a href="/index.html" class="link-button secondary-button">
+                    ← Back to Home
+                </a>
+                <a href="/students.html" class="link-button primary-button">
+                    View Students →
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>

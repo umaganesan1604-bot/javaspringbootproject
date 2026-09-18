@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List - Student Management System</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                Student Management System
+            </a>
+            <div class="nav-links">
+                <a href="/index.html">
+                    Home
+                </a>
+                <a href="/add-student.html">
+                    Add Student
+                </a>
+                <a href="/students.html" class="active">
+                    View Students
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Student List Page -->
+    <main class="page-container">
+        <div class="container">
+            <h1>Student List</h1>
+            <p class="subtitle">
+                View and manage all student records
+            </p>
+            <!-- Add Student Button -->
+            <div class="action-bar">
+                <a href="/add-student.html" class="button primary-button">
+                    + Add Student
+                </a>
+            </div>
+            <!-- Student Table -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody">
+                        <!--
+                            JavaScript will load students here
+                            using GET /students
+                        -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- Back to Home -->
+            <div class="page-actions">
+                <a href="/index.html"
+                   class="link-button secondary-button">
+                    ← Back to Home
+                </a>
+            </div>
+        </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
